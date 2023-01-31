@@ -21,9 +21,7 @@ console.log("mongo is connected");
 
 app.use(express.json()); // middleware for all post requests to convert json data from body into JS Object
 app.use(cors());
-app.get("/", function (request, response) {
-    response.send("welcome to movie api🎉🎉🎉🎉🎉");
-});
+
 
 app.use("/movies", moviesRouter);
 
